@@ -7,8 +7,8 @@ OCFWebServer is used by OCFWeb which is a framework for developing web applicati
 # Goals
 OCFWebServer was developed to be used for Objective-Cloud.com. This does not mean that the goals we had while developing it are incompatible with the needs of developers of `regular` apps. These are the goals we had in mind while working on OCFWebServer:
 
-* Easy to use in your own application: Embedding OCFWebServer should be done with just a few lines of code.
-* Be *truly* asynchronous: Use GCD/dispatch_io everywhere and make it easy to let the user write asynchronous request handlers.
+# Easy to use in your own application: Embedding OCFWebServer should be done with just a few lines of code.
+  Be *truly* asynchronous: Use GCD/dispatch_io everywhere and make it easy to let the user write asynchronous request handlers.
 * Many concurrent requests: We wanted to be able to have a minimum of 128 concurrent requests per OCFWebServer instance. OCFWebServer can do more but out of the box is supports up to 128 concurrent requests. This is enough for [Objective-Cloud.com](http://objective-cloud.com) and probably also enough for your needs as well.
 * Don't do everything: If you need a simple HTTP server in your app OCFWebServer is made for you. Please do not try to run an instance of OCFWebServer, publicly on the internet. Your machine will be hacked. At [Objective-Cloud.com](http://objective-cloud.com) we always have at least one proxy server in front of our instances of OCFWebServer. 
 
@@ -184,3 +184,4 @@ OCFWebServer is available under the New BSD License - just like GCDWebServer.
 	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	
+ 
